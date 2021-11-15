@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact | Willems-IT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="mobile"><a href="shop.html">Shop</a></li>
+                <li class="mobile"><a href="login.html">Login</a></li>
+                <li class="logo"><a href="index.html">Willems-IT Logo</a></li>
+                <li class="desktop"><a href="shop.html">Shop</a></li>
+                <li class="desktop"><a href="login.html">Login</a></li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+      <h1>Contact ons</h1>
+      <p>Heb je een vraag? stuur ons een bericht.</p>
+      <form action="mail.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email">
+          <label for="subject">Subject:</label>
+          <input type="text" name="subject" id="subject">
+          <label for="message">Message</label>
+          <textarea name="message" cols="30" rows="10"></textarea>
+          <input type="submit" value="Send">
+      </form>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("email").required;
+          document.getElementById("submit").innerHTML = x;
+        }
+        </script>
+
+    <footer>
+        © 2021 by Willems-IT
+    </footer>
+    
+</body>
+
+</html>
